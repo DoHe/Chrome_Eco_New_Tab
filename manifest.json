@@ -1,11 +1,11 @@
 {
     "name": "Eco New Tab",
-    "version": "0.1.010",
+    "version": "0.1.011",
     "description": "Chrome Extension for a custom new tab page with a focus on the environment protection",
     
-    "icons": { "16": "icon16.png",
-           "48": "icon48.png",
-          "128": "icon128.png" },
+    "icons": { "16": "img/icon16.png",
+           "48": "img/icon48.png",
+          "128": "img/icon128.png" },
 
     "permissions": ["storage", "bookmarks", "tabs"],
     
