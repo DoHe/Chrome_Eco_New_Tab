@@ -1,0 +1,14 @@
+{
+    "name": "Eco New Tab",
+    "version": "0.1.001",
+    "description": "Chrome Extension for a custom new tab page with a focus on the environment protection",
+    "permissions": ["storage"],
+     "chrome_url_overrides" : {
+    	"newtab": "eco_new_tab.html"
+  	},
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "manifest_version": 2
+  }
