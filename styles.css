@@ -1,0 +1,108 @@
+html {
+	background-color:#FFFFCC;
+	background-image: url('bg/1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width:100vw;
+	height:100vh;
+}
+
+#search-area{
+	width:90vw;
+	max-width:1080px;
+	height:auto;
+	margin:10px auto;
+	padding:1px;
+	
+
+}
+
+#search-area p{
+	text-align: center;
+	margin:10px 10px 30px;
+}
+#search-area p#logo{
+	margin:50px;
+}
+#search-area p#logo img{
+	background-color: rgba(255,255,255,0.85);
+	padding:30px;
+	border-radius:50px;
+}
+#searchbox{
+	padding:20px;
+	width:60%;
+	font-size:16px;
+	height:24px;
+	border-radius:10px;
+}
+
+#searchbox:focus {
+  outline:none;
+}
+
+#bookmarks-bar {
+	
+	width:90vw;
+	max-width:1080px;
+
+	margin:10px auto;
+	text-align:center;
+
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+#bookmarks-bar p {
+	background-color:rgba(255,255,255,0.85);
+	width:120px;
+	height:120px;
+	text-align:center;
+	border-radius:20px;
+	margin:10px;
+	
+
+}
+#bookmarks-bar p,
+#bookmarks-bar p a {
+	color:#000000;
+	text-decoration:none;
+}
+
+
+#bookmarks-bar p img {
+	margin:10px;
+	width:80px;
+	height:80px;
+	object-fit:contain
+	
+}
+
+#btn_settings,
+#btn_home {
+	background-color:rgba(255,255,255,0.85);
+	background-size: 32px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width:32px;
+	height:32px;
+	padding:6px;
+	border-radius:22px;
+
+	display:block;
+	position:absolute;
+	bottom:30px;
+	right:30px;
+
+
+}
+#btn_settings {
+	background-image: url('img/gear.png');
+}
+
+#btn_home {
+	visibility:hidden;
+	background-image: url('img/home.png');
+}
