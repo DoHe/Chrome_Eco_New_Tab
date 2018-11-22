@@ -1,5 +1,5 @@
 html {
-	background-color:#FFFFCC;
+	background-color:#C0FCC5;
 	background-image: url('bg/1.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -53,9 +53,25 @@ html {
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:center;
+	display:none;
 }
 
-#bookmarks-bar p {
+#mostViewed-bar{
+	width:90vw;
+	max-width:1080px;
+
+	margin:10px auto;
+	text-align:center;
+
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	display:none;
+}
+
+#bookmarks-bar p,
+#mostViewed-bar p {
 	background-color:rgba(255,255,255,0.85);
 	width:120px;
 	height:120px;
@@ -66,19 +82,26 @@ html {
 
 }
 #bookmarks-bar p,
-#bookmarks-bar p a {
+#bookmarks-bar p a,
+#mostViewed-bar p,
+#mostViewed-bar p a {
 	color:#000000;
 	text-decoration:none;
 }
 
 
-#bookmarks-bar p img {
+
+
+#bookmarks-bar p img,
+#mostViewed-bar p img {
 	margin:10px;
-	width:80px;
-	height:80px;
+	width:70px;
+	height:70px;
 	object-fit:contain
 	
 }
+
+
 
 #btn_settings,
 #btn_home {
@@ -105,4 +128,47 @@ html {
 #btn_home {
 	visibility:hidden;
 	background-image: url('img/home.png');
+}
+
+
+#settings {
+	background-color:rgba(255,255,255,0.90);
+	position:absolute;
+	top:10vh;
+	left:10vw;
+	width:80vw;
+	height:80vh;
+	border-radius: 30px;
+	display: none;
+
+}
+
+.setting {
+	margin:10px auto;
+	width:400px;
+	max-width:90%;
+	position:relative;
+
+}
+
+.switch{
+	border:2px solid #CCCCCC;
+	height:20px;
+	width:40px;
+	border-radius:12px;
+	display:inline-block;
+	background-color: #FF0000;
+	position:absolute;
+	right:10px;
+}
+.switch span{
+	display:inline-block;
+	height:20px;
+	width:20px;
+	border-radius:10px;
+	background-color:#777777;
+}
+.switch-on{
+	background-color: #00FF00; 
+	text-align:right;
 }
