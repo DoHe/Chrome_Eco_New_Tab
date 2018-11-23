@@ -13,6 +13,18 @@
     	"newtab": "eco_new_tab.html"
   	},
     
+    "chrome_settings_overrides": {
+        "search_provider": {
+            "name": "Ecosia Search (NT)",
+            "keyword": "ecosia_nt",
+            "search_url": "https://www.ecosia.org/search?q={searchTerms}&addon=eco_new_tab&addonversion=0.1.021",
+            "favicon_url": "https://cdn.ecosia.org/assets/images/ico/favicon.ico",
+            "suggest_url": "https://ac.ecosia.org/?q={searchTerms}&type=list&mkt=__MSG_@@ui_locale__",
+            "encoding": "UTF-8",
+            "is_default": true
+        }
+    },
+    
     "background": {
       "scripts": ["background.js"],
       "persistent": false
